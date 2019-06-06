@@ -1,7 +1,5 @@
 <?php
 include_once "dbconn.php";
-$session_start();
-
 $email=$_POST['username'];
 $password=$_POST['password'];
 $sql="SELECT * FROM users where email='$email' and password='$password';";
